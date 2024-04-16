@@ -1,11 +1,10 @@
+import core.Data;
+import core.StateManager;
+
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
-import java.util.stream.Stream;
-
-import static java.util.HashSet.newHashSet;
 
 public static void main (String[] args) throws Exception {
     Data data = new Data();
