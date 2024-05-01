@@ -1,5 +1,5 @@
 import core.Data;
-import core.StateManager;
+import core.State;
 import core.Value;
 
 import java.io.FileInputStream;
@@ -51,17 +51,17 @@ public static void main (String[] args) throws Exception {
 static void Extract(int tempInt, String tempString, FileInputStream fileInputStream) throws Exception {
     while ((tempInt = fileInputStream.read()) != -1)
     {
-        switch (StateManager.getState()) {
+        switch (State.getState()) {
             case "inWaiting":
                 if (tempInt == 91) // '['
                 {
-                    StateManager.switchState("isReadingTag");
+                    State.switchState("isReadingTag");
                 }
                 break;
             case "isReadingTag":
                 if (tempInt == 93) // ']'
                 {
-                    StateManager.switchState("isReadingKey");
+                    State.switchState("isReadingKey");
                     new Value(tempString);
                     tempString = "";
                 } else
@@ -70,7 +70,7 @@ static void Extract(int tempInt, String tempString, FileInputStream fileInputStr
             case "isReadingKey":
                 if (tempInt == 45) // '-'
                 {
-                    StateManager.switchState("isReadingDefinition");
+                    State.switchState("isReadingDefinition");
                     Value.getLastInstance().setKey(tempString.trim());
                     tempString = "";
                 } else
@@ -79,7 +79,7 @@ static void Extract(int tempInt, String tempString, FileInputStream fileInputStr
             case "isReadingDefinition":
                 if (tempInt == 13) // '\r'
                 {
-                    StateManager.switchState("inWaiting");
+                    State.switchState("inWaiting");
                     Value.getLastInstance().setDefinition(tempString.trim());
                     tempString = "";
                 } else

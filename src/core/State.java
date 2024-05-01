@@ -3,7 +3,8 @@ package core;
 import java.util.HashMap;
 import java.util.Map;
 
-public class StateManager {
+public class State {
+
     private static Map<String, Boolean> _stateMap = new HashMap<>();
 
     static {

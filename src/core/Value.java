@@ -103,6 +103,7 @@ public class Value {
 }
 enum Type
 {
+    definition,
     keyword,
     hotkey,
     func,
