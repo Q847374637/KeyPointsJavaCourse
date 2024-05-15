@@ -1,0 +1,16 @@
+Pseudocode mostly is built from three parts: declaration of class instance' variables, declaration of methods and methods logic
+
+[definition]xp - Extreme Programming, concept, that appeared in 1990, claims that client will always get what he/she wants (also in case if terms of references must be changed).
+XP is based on set of specific rules, and most people prefer using and adapting only a part of them for their needs.
+Some of XP' rules:
+1. Modify versions a little but do it often
+2. Follow step by step loop developing
+3. Do not add elements, that are not in term of reference
+4. Write test code first
+5. Keep it simple
+6. Practice pair programing. That will allow developers to know everything about code
+
+If there is a choice between for and while choose while when you know clear amount of the loop iterations
+
+[func]Integer.parseInt() - allows to get int from string
+[func]Math.random() - returns double

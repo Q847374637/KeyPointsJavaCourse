@@ -1,0 +1,24 @@
+In the process of the inheritance designing common code is placed into the separate abstract class, that is parent
+Process of inheritance is also called extending process.
+
+Class instance's variables can not be overrided. If one method overrided in the inheritance' hierarchy multiply times than system will take method from the lowest level of classes' hierarchy in the time of calling.
+
+Inheritance' design checking:
+Just to be sure that everything is well-designed you can use a rule is-a has-a.
+You can ask yourself: is this x that y?
+Example: A Tub is a Bathroom - false
+A Bathroom is a Tub - false, because bathroom is not a bath 
+
+So, they are linked by has-a
+A Bathroom has a Tub - true, then Bathroom has a Tub variable = Bathroom has a reference of Tub, but not extends it
+
+is-a only onesided!
+
+[other]Polymorfism principle - all parent' instances can store ALL childs reference
+Arguments and returning types can also be polymorfic
+
+Method can be final
+
+Overrided method can not be less accessible (was public became private). Overrided does not mean overloaded
+
+Overloaded method with chaged returning type is unaccectible. JVM will think that you try to override method. Access modificator can be changed

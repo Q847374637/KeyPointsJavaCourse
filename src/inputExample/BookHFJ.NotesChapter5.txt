@@ -1,0 +1,18 @@
+[func]ArrayList.add(Object elem) - adds Object parametrs
+[func]ArrayList.remove(int index) - removes object based on the index 
+[func]ArrayList.remove(Object elem) - removes object (if it exists in ArrayList)
+[func]ArrayList.contains(Object elem) - returns true if element exists in ArrayList
+[func]ArrayList.isEmpty() - returns true if ArrayList does not contain elements
+[func]ArrayList.indexOf(Object elem) - returns index of element with parameter value or -1
+[func]ArrayList.size() - returns ArrayList's elements amount
+[func]ArrayList.get() - returns an object with parameter's index position
+
+[other]ArrayList - it is NOT an array, it is an object. The difference is that objects have their own state and behavior
+
+'&', '|' are used more in working with bits instead of '&&', '||'
+
+[pack]java.util - contains a set of classes-utils
+[pack]java.swing - are used for GUI Swing
+[pack]java.lang - contains classes like System and Math
+
+There are some packages that start with 'javax'. 'x' is put in names of standart (not expirimental) packages-extends. But their might be included in standart packages. In order for not to make a mess developers do not remove 'x'.
