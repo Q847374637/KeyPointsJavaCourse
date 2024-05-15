@@ -1,0 +1,87 @@
+computer science = input data + output data
+
+[definition]CS - study of information, how do you represent it and how do you process it -> computational thinking - an application
+[definition]RAM - random access memory
+
+in this terms, problems solving looks like this:
+
+          ____________
+input -> | algorithm  | -> output
+         |____________|
+
+[other]unary - a system, that use one symbol to count things (base-1)
+[other]binary - a system, that use two digits (base-2)
+bit goes from binary digit (bit is just a zero and one, it is a binary digit)
+the decimal system is mostly used by humans (where the dec means ten) (base-10)
+transistors = switchers
+
+10^2  10^1 10^0
+
+2^2    2^1  2^0
+
+ 4      2    1
+
+ #      #    #
+
+ 0      0    0
+
+byte = 8 bites
+
+A = 65 
+
+[definition]ASCII - american standart code for information interchange (matching numbers and letters)
+
+number are stored on the other numbers
+
+[other]Unicode - also mapping numbers to letters
+
+Concerning emojies:
+first byte represents the structure of the emoji + reusable pattern
+
+[definition]RGB - red green blue
+each colour of the pixel contains 3 bytes (with amount less or equal 255)
+
+[definition]FPS - frames per second
+
+Abstraction - the simplicifaction of something
+
+         n       n/2
+t |      '      /
+i |      '     /
+m |     '     /
+e |     '    /
+  |    '    /
+t |    '   /
+o |   '   /
+  |   '  /                          log n
+s |  '  /                              2
+o |  ' / ________________________________
+l | ' / '    
+v | '/ '
+e |'/ / _________________________________
+                size of problem
+
+Pseudocode. Example:
+
+1. Pick up phone book
+2. Open to middle of phone book
+3. Look at page
+4. If person is on page
+5.    Call person
+6. Else if person is earlier in book
+7.    Open to middle of left half of book
+8.    Go to line 3
+9. Else if person is later in book
+10.    Open to middle of right half of book
+11.    Go to line 3
+12. Else
+13.    Quit
+
+Actions/verbs = functions (+ arguments, return values)
+Else/if/else if = conditions
+what goes after conditions = boolean expressions (just a question with yes/no)
+Go to = loops
+
+Scratch - graphical programming language
+
+Sprites are interactive objects, who must repond to events, not just images
