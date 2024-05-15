@@ -107,5 +107,6 @@ enum Type
     keyword,
     hotkey,
     func,
+    pack,
     other
 }
